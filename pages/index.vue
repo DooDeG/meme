@@ -23,6 +23,7 @@
           GitHub
         </a>
       </div>
+      <NuxtLink to="/login">Home page</NuxtLink>
     </div>
   </div>
 </template>
