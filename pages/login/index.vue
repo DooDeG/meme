@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containerlo">
     <div class="min-h-screen flex flex-col items-center justify-center ">
       <div class="flex flex-col shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md bg-white">
         
@@ -80,7 +80,7 @@ export default {}
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
+.containerlo {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;

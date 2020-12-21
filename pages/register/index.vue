@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containerlog">
     <div class="font-mono">
       <!-- Container -->
       <div class="container mx-auto">
@@ -118,7 +118,7 @@ export default {}
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
+.containerlog {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;

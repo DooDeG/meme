@@ -1,35 +1,26 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        meme
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-      <NuxtLink to="/login">Home page</NuxtLink>
+    <div class=" w-full flex justify-center">
+        <div class="w-7/12 h-10 pl-3 pr-2 bg-white border rounded-full flex justify-between items-center relative mt-10">
+          <input type="search" name="search" id="search" placeholder="Search" v-model="kw"
+                class="appearance-none w-full outline-none focus:outline-none active:outline-none"/>
+          <button type="submit" class="ml-1 outline-none focus:outline-none active:outline-none">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" class="w-6 h-6">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </button>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
-export default {}
+export default {
+    name: "home",
+    components: {},
+    data: () => ({
+        kw:''
+    }),
+}
 </script>
 
 <style>
@@ -38,42 +29,4 @@ export default {}
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
